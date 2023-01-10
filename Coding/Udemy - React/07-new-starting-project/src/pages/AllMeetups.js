@@ -1,3 +1,5 @@
+import MeetupList from '../components/meetups/MeetupList';
+
 const DUMMY_DATA = [
   {
     id: 'm1',
@@ -19,7 +21,14 @@ const DUMMY_DATA = [
   },
 ];
 
-const AllMeetups = (props) => {
-  return <div>All Meetups</div>;
+const AllMeetups = () => {
+  return (
+    <div>
+      <h1>All Meetups</h1>
+      <ul>
+        <MeetupList meetups={DUMMY_DATA} />
+      </ul>
+    </div>
+  );
 };
 export default AllMeetups;
